@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 const productos = [
   {
     nombre: "Brownies",
     descripcion:
       "Brownies suaves y chocolatosos, preparados para disfrutar en cualquier momento.",
     precio: "Desde $--",
-    imagen: "brownie",
+    imagen: "/imagenes/brownie.jpg",
     detalle: "Chocolate intenso",
   },
   {
@@ -12,7 +14,7 @@ const productos = [
     descripcion:
       "Pasteles personalizados para cumpleaños, reuniones y momentos especiales.",
     precio: "Desde $--",
-    imagen: "pastel",
+    imagen: "/imagenes/pastel.jpg",
     detalle: "Hechos a tu gusto",
   },
   {
@@ -20,14 +22,14 @@ const productos = [
     descripcion:
       "Galletas artesanales con distintos sabores y presentaciones.",
     precio: "Desde $--",
-    imagen: "galletas",
+    imagen: "/imagenes/galletas.jpg",
     detalle: "Recién horneadas",
   },
   {
     nombre: "Pays",
     descripcion: "Postres cremosos y frescos para compartir.",
     precio: "Desde $--",
-    imagen: "pay",
+    imagen: "/imagenes/pay.jpg",
     detalle: "Suaves y cremosos",
   },
 ];
@@ -140,10 +142,16 @@ export default function Home() {
           <div className="product-grid">
             {productos.map((producto, index) => (
               <article className="product-card" key={producto.nombre}>
-                <div className={`product-image product-${producto.imagen}`}>
+                <div className="product-image">
+                  <Image
+                    className="product-photo"
+                    src={producto.imagen}
+                    alt={`Fotografía de ${producto.nombre.toLowerCase()}`}
+                    fill
+                    sizes="(max-width: 600px) calc(100vw - 30px), (max-width: 900px) 50vw, 25vw"
+                  />
                   <span className="product-number">0{index + 1}</span>
                   <span className="product-label">{producto.detalle}</span>
-                  <div className="dessert" aria-hidden="true"><i /><i /><i /></div>
                 </div>
                 <div className="product-content">
                   <div className="product-title"><h3>{producto.nombre}</h3><span>♡</span></div>
