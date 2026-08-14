@@ -35,7 +35,7 @@ const productos = [
 const categorias = ["Pasteles", "Brownies", "Galletas", "Pays", "Postres especiales"];
 
 // Reemplaza estos datos cuando estén listas las redes y el número del negocio.
-const whatsappNumber = "521XXXXXXXXXX";
+const whatsappNumber = "523327883444";
 const whatsappMessage =
   "Hola, vi la página de Dulce Canela y me gustaría hacer un pedido.";
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
@@ -133,9 +133,9 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <p className="eyebrow"><span>✦</span> Para consentirte</p>
-              <h2>Nuestros favoritos</h2>
+              <h2>Postres</h2>
             </div>
-            <p>Una pequeña selección de sabores hechos para compartir, celebrar o simplemente disfrutar.</p>
+           
           </div>
           <div className="product-grid">
             {productos.map((producto, index) => (
