@@ -100,16 +100,9 @@ h2 { margin-bottom: 0; font: 600 clamp(36px, 4vw, 52px)/1.12 var(--font-playfair
 .product-card { overflow: hidden; border-radius: 140px 140px 18px 18px; background: var(--white); border: 1px solid rgba(75,46,39,.08); box-shadow: 0 14px 40px rgba(75,46,39,.06); transition: transform .25s, box-shadow .25s; }
 .product-card:hover { transform: translateY(-7px); box-shadow: 0 20px 45px rgba(75,46,39,.12); }
 .product-image { position: relative; height: 285px; overflow: hidden; background: var(--blush); }
-.product-image::after { content: ""; position: absolute; inset: 15% 13%; border: 1px solid rgba(255,255,255,.65); border-radius: 50%; }
-.product-brownie { background: #e7cbc0; }.product-pastel { background: #d8dfcf; }.product-galletas { background: #f0ddbd; }.product-pay { background: #eacfd0; }
-.product-number { position: absolute; z-index: 3; left: 20px; top: 22px; color: rgba(75,46,39,.48); font: italic 17px var(--font-playfair),serif; }
+.product-photo { object-fit: cover; }
+.product-number { position: absolute; z-index: 3; left: 20px; top: 22px; color: var(--white); font: italic 17px var(--font-playfair),serif; text-shadow: 0 1px 5px rgba(75,46,39,.65); }
 .product-label { position: absolute; z-index: 4; bottom: 15px; left: 50%; transform: translateX(-50%); white-space: nowrap; border-radius: 99px; padding: 7px 13px; background: rgba(255,253,249,.87); color: var(--brown-soft); font-size: 10px; font-weight: 700; }
-.dessert { position: absolute; z-index: 2; left: 50%; top: 49%; width: 125px; height: 85px; transform: translate(-50%,-50%); border-radius: 10px 10px 28px 28px; background: #71473a; box-shadow: inset 0 -15px #5a352d, 0 18px 18px rgba(75,46,39,.14); }
-.dessert::before { content:""; position:absolute; width: 135px; height: 25px; left:-5px; top:-12px; border-radius:50%; background:#8b5a49; }
-.dessert i { position: absolute; z-index:2; top:-20px; width:25px; height:25px; border-radius:50%; background:#bc765c; }.dessert i:nth-child(1){left:20px}.dessert i:nth-child(2){left:52px;top:-27px}.dessert i:nth-child(3){left:84px}
-.product-pastel .dessert { background:#f1dacb; box-shadow:inset 0 -15px #e5c4b3,0 18px 18px rgba(75,46,39,.12)}.product-pastel .dessert::before{background:#fff6e9}.product-pastel .dessert i{background:#c78e85}
-.product-galletas .dessert { width:120px;height:120px;border-radius:50%;background:#c78e56;box-shadow:inset 0 -10px #b37b49,0 18px 18px rgba(75,46,39,.12)}.product-galletas .dessert::before{inset:18px;width:10px;height:10px;box-shadow:35px 12px #71473a,63px -5px #71473a,72px 48px #71473a,20px 65px #71473a;background:#71473a}.product-galletas .dessert i{display:none}
-.product-pay .dessert { width:145px;height:80px;border-radius:50%;background:#d59a76;box-shadow:inset 0 -18px #b97758,0 18px 18px rgba(75,46,39,.12)}.product-pay .dessert::before{left:10px;top:5px;width:125px;height:45px;background:#fff4d7}.product-pay .dessert i{display:none}
 .product-content { padding: 25px 23px 27px; }.product-title { display:flex;justify-content:space-between;align-items:center}.product-title h3 { margin:0;font:600 25px var(--font-playfair),serif}.product-title span{color:var(--cinnamon);font-size:20px}.product-content p{min-height:66px;margin:12px 0 18px;color:var(--brown-soft);font-size:12px;line-height:1.65}.product-content strong{color:var(--cinnamon);font-size:13px}
 
 .categories { padding-block: 65px; color: white; background: var(--brown); }
