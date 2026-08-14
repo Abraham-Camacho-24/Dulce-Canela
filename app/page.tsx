@@ -2,34 +2,41 @@ import Image from "next/image";
 
 const productos = [
   {
-    nombre: "Brownies",
+    nombre: "Chocoflan",
     descripcion:
-      "Brownies suaves y chocolatosos, preparados para disfrutar en cualquier momento.",
-    precio: "Desde $--",
-    imagen: "/imagenes/brownie.jpg",
-    detalle: "Chocolate intenso",
+      "La mezcla perfecta entre pastel de chocolate y flan napolitano cremoso.",
+    precio: "Desde $300",
+    imagen: "/imagenes/Chocoflan1.jpg",
+    detalle: "Delicioso y cremoso",
   },
   {
-    nombre: "Pasteles",
+    nombre: "Galletas de mantequilla",
     descripcion:
-      "Pasteles personalizados para cumpleaños, reuniones y momentos especiales.",
+      "Crujientes, doraditas y con un irresistible sabor casero.",
     precio: "Desde $--",
-    imagen: "/imagenes/pastel.jpg",
+    imagen: "/imagenes/Galletas_Mantequilla.png",
     detalle: "Hechos a tu gusto",
   },
   {
-    nombre: "Galletas",
+    nombre: "Empanadas",
     descripcion:
-      "Galletas artesanales con distintos sabores y presentaciones.",
+      "Hornea tus tardes con nuestras suaves empanadas rellenas de sabor.",
     precio: "Desde $--",
-    imagen: "/imagenes/galletas.jpg",
+    imagen: "/imagenes/Empanadas.png",
     detalle: "Recién horneadas",
   },
   {
-    nombre: "Pays",
-    descripcion: "Postres cremosos y frescos para compartir.",
+    nombre: "Galletas de Chocolate",
+    descripcion: "Esponjosos, suaves y con el toque perfecto de canela y glaseado.",
     precio: "Desde $--",
-    imagen: "/imagenes/pay.jpg",
+    imagen: "/imagenes/.png",
+    detalle: "Suaves y cremosos",
+  },
+  {
+    nombre: "Cheesecake",
+    descripcion: "Textura ultracremosa sobre una crocante base de galleta.",
+    precio: "Desde $--",
+    imagen: "/imagenes/chessecake.png",
     detalle: "Suaves y cremosos",
   },
 ];
