@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+import Link from "next/link";
+import { productos } from "@/data/productos";
+
+
 const productos = [
   {
     nombre: "Chocoflan",
@@ -40,6 +44,7 @@ const productos = [
     detalle: "Suaves y cremosos",
   },
 ];
+
 
 const categorias = ["Pasteles", "Brownies", "Galletas", "Pays", "Postres especiales"];
 
@@ -145,7 +150,7 @@ export default function Home() {
           </div>
           <div className="product-grid">
             {productos.map((producto, index) => (
-              <article className="product-card" key={producto.nombre}>
+              <article className="product-card" key={producto.slug}>
                 <div className="product-image">
                   <Image
                     className="product-photo"
@@ -160,7 +165,12 @@ export default function Home() {
                 <div className="product-content">
                   <div className="product-title"><h3>{producto.nombre}</h3><span>♡</span></div>
                   <p>{producto.descripcion}</p>
-                  <strong>{producto.precio}</strong>
+                  <div className="product-card-footer">
+                    {producto.precioDesde && <strong>Desde ${producto.precioDesde}</strong>}
+                    <Link className="detail-link" href={`/productos/${producto.slug}`}>
+                      Ver detalles <span aria-hidden="true">→</span>
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}
