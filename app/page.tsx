@@ -1,6 +1,50 @@
 import Image from "next/image";
+
 import Link from "next/link";
 import { productos } from "@/data/productos";
+
+
+const productos = [
+  {
+    nombre: "Chocoflan",
+    descripcion:
+      "La mezcla perfecta entre pastel de chocolate y flan napolitano cremoso.",
+    precio: "Desde $300",
+    imagen: "/imagenes/Chocoflan1.jpg",
+    detalle: "Delicioso y cremoso",
+  },
+  {
+    nombre: "Galletas de mantequilla",
+    descripcion:
+      "Crujientes, doraditas y con un irresistible sabor casero.",
+    precio: "Desde $--",
+    imagen: "/imagenes/Galletas_Mantequilla.png",
+    detalle: "Hechos a tu gusto",
+  },
+  {
+    nombre: "Empanadas",
+    descripcion:
+      "Hornea tus tardes con nuestras suaves empanadas rellenas de sabor.",
+    precio: "Desde $--",
+    imagen: "/imagenes/Empanadas.png",
+    detalle: "Recién horneadas",
+  },
+  {
+    nombre: "Galletas de Chocolate",
+    descripcion: "Esponjosos, suaves y con el toque perfecto de canela y glaseado.",
+    precio: "Desde $--",
+    imagen: "/imagenes/Galletas_chocolate.png",
+    detalle: "Suaves y cremosos",
+  },
+  {
+    nombre: "Cheesecake",
+    descripcion: "Textura ultracremosa sobre una crocante base de galleta.",
+    precio: "Desde $--",
+    imagen: "/imagenes/chessecake.png",
+    detalle: "Suaves y cremosos",
+  },
+];
+
 
 const categorias = ["Pasteles", "Brownies", "Galletas", "Pays", "Postres especiales"];
 
@@ -81,19 +125,16 @@ export default function Home() {
             <div className="made-with-love"><span>♡</span> Preparado artesanalmente con mucho cariño</div>
           </div>
 
-          <div className="hero-art" aria-label="Ilustración decorativa de un pastel">
-            <Sparkle className="sparkle sparkle-top" />
-            <Sparkle className="sparkle sparkle-side" />
-            <span className="doodle doodle-one">⌁</span>
-            <span className="doodle doodle-two">⌁</span>
-            <div className="cake-plate" />
-            <div className="cake">
-              <div className="cake-top"><span /><span /><span /><span /><span /></div>
-              <div className="cake-icing"><i /><i /><i /><i /></div>
-              <div className="cake-body"><span>♡</span></div>
-            </div>
-            <div className="hero-note"><span>hecho con</span><strong>mucho amor ♡</strong></div>
-          </div>
+        <div className="hero-art" aria-label="Logo de Dulce Canela">
+  <Image
+    src="/imagenes/logo1.png"
+    alt="Dulce Canela"
+    width={500}
+    height={500}
+    className="hero-logo"
+    priority
+  />
+</div>
         </div>
         <div className="hero-wave" />
       </section>

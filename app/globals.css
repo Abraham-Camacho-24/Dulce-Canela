@@ -132,3 +132,9 @@ footer{padding-block:32px;color:#f7e8e1;background:#35231f}.footer-inner{display
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+.hero-logo {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
+}
