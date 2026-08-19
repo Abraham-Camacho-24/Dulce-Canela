@@ -71,26 +71,22 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <p className="eyebrow"><span>✦</span> Preparado con cariño</p>
             <h1>{producto.nombre}</h1>
             <p>{producto.descripcion}</p>
-            {producto.precioDesde && (
+            {producto.precioDesde !== undefined && (
               <div className="detail-price">
                 <span>Desde</span>
                 <strong>{formatoPrecio(producto.precioDesde)}</strong>
               </div>
             )}
-            <a className="button" href={whatsappUrl} target="_blank" rel="noreferrer">
-              Pedir por WhatsApp <span aria-hidden="true">→</span>
-            </a>
-            <small>Te responderemos lo más pronto posible ♡</small>
           </div>
         </div>
       </section>
 
       <section className="detail-content section">
         <div className="container detail-sections">
-          {producto.tamanos && (
+          {!!producto.tamanos?.length && (
             <article className="detail-panel detail-panel-wide">
               <p className="detail-kicker">Opciones</p>
-              <h2>Presentaciones</h2>
+              <h2>Tamaños y precios</h2>
               <div className="price-list">
                 {producto.tamanos.map((tamano) => (
                   <div key={tamano.nombre}>
@@ -102,7 +98,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </article>
           )}
 
-          {producto.sabores && (
+          {!!producto.presentaciones?.length && (
+            <article className="detail-panel detail-panel-presentations">
+              <p className="detail-kicker">Elige la tuya</p>
+              <h2>Presentaciones</h2>
+              <ul className="option-list presentation-list">
+                {producto.presentaciones.map((presentacion) => <li key={presentacion}>{presentacion}</li>)}
+              </ul>
+            </article>
+          )}
+
+          {!!producto.sabores?.length && (
             <article className="detail-panel">
               <p className="detail-kicker">Para elegir</p>
               <h2>Sabores disponibles</h2>
@@ -112,10 +118,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </article>
           )}
 
-          {producto.saboresPremium && (
+          {!!producto.saboresPremium?.length && (
             <article className="detail-panel">
               <p className="detail-kicker">Un toque especial</p>
               <h2>Sabores premium</h2>
+              <p className="additional-cost-label">Costo adicional</p>
               <ul className="priced-options">
                 {producto.saboresPremium.map((sabor) => (
                   <li key={sabor.nombre}><span>{sabor.nombre}</span><strong>+{formatoPrecio(sabor.extra)}</strong></li>
@@ -124,10 +131,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </article>
           )}
 
-          {producto.extras && (
+          {!!producto.extras?.length && (
             <article className="detail-panel">
               <p className="detail-kicker">Personaliza tu pedido</p>
               <h2>Extras</h2>
+              <p className="additional-cost-label">Costo adicional</p>
               <ul className="priced-options">
                 {producto.extras.map((extra) => (
                   <li key={extra.nombre}><span>{extra.nombre}</span><strong>+{formatoPrecio(extra.precio)}</strong></li>
@@ -136,22 +144,26 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </article>
           )}
 
-          {producto.presentaciones && (
-            <article className="detail-panel">
-              <p className="detail-kicker">Elige la tuya</p>
-              <h2>Presentaciones</h2>
-              <ul className="option-list">
-                {producto.presentaciones.map((presentacion) => <li key={presentacion}>{presentacion}</li>)}
-              </ul>
-            </article>
-          )}
-
-          {producto.notas && (
+          {!!producto.notas?.length && (
             <aside className="detail-notes">
               <span aria-hidden="true">♡</span>
-              <div><h2>Antes de pedir</h2>{producto.notas.map((nota) => <p key={nota}>{nota}</p>)}</div>
+              <div><h2>Antes de hacer tu pedido</h2>{producto.notas.map((nota) => <p key={nota}>{nota}</p>)}</div>
             </aside>
           )}
+
+          <section className="detail-order" aria-labelledby="order-title">
+            <span className="detail-order-heart" aria-hidden="true">♡</span>
+            <p className="detail-kicker">Hecho especialmente para ti</p>
+            <h2 id="order-title">¿Ya elegiste tu favorito?</h2>
+            <p>
+              Ahora que conoces nuestros tamaños, sabores y opciones, cuéntanos qué se te
+              antojó y con gusto preparamos tu pedido.
+            </p>
+            <a className="button" href={whatsappUrl} target="_blank" rel="noreferrer">
+              Pedir por WhatsApp <span aria-hidden="true">→</span>
+            </a>
+            <small>Te responderemos lo más pronto posible ♡</small>
+          </section>
         </div>
       </section>
 
