@@ -3,49 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { productos } from "@/data/productos";
 
-
-const productos = [
-  {
-    nombre: "Chocoflan",
-    descripcion:
-      "La mezcla perfecta entre pastel de chocolate y flan napolitano cremoso.",
-    precio: "Desde $300",
-    imagen: "/imagenes/Chocoflan1.jpg",
-    detalle: "Delicioso y cremoso",
-  },
-  {
-    nombre: "Galletas de mantequilla",
-    descripcion:
-      "Crujientes, doraditas y con un irresistible sabor casero.",
-    precio: "Desde $--",
-    imagen: "/imagenes/Galletas_Mantequilla.png",
-    detalle: "Hechos a tu gusto",
-  },
-  {
-    nombre: "Empanadas",
-    descripcion:
-      "Hornea tus tardes con nuestras suaves empanadas rellenas de sabor.",
-    precio: "Desde $--",
-    imagen: "/imagenes/Empanadas.png",
-    detalle: "Recién horneadas",
-  },
-  {
-    nombre: "Galletas de Chocolate",
-    descripcion: "Esponjosos, suaves y con el toque perfecto de canela y glaseado.",
-    precio: "Desde $--",
-    imagen: "/imagenes/Galletas_chocolate.png",
-    detalle: "Suaves y cremosos",
-  },
-  {
-    nombre: "Cheesecake",
-    descripcion: "Textura ultracremosa sobre una crocante base de galleta.",
-    precio: "Desde $--",
-    imagen: "/imagenes/chessecake.png",
-    detalle: "Suaves y cremosos",
-  },
-];
-
-
 const categorias = ["Pasteles", "Brownies", "Galletas", "Pays", "Postres especiales"];
 
 // Reemplaza estos datos cuando estén listas las redes y el número del negocio.
