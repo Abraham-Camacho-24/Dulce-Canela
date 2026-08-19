@@ -117,13 +117,11 @@ export default function Home() {
                     sizes="(max-width: 600px) calc(100vw - 30px), (max-width: 900px) 50vw, 25vw"
                   />
                   <span className="product-number">0{index + 1}</span>
-                  <span className="product-label">{producto.detalle}</span>
                 </div>
                 <div className="product-content">
                   <div className="product-title"><h3>{producto.nombre}</h3><span>♡</span></div>
                   <p>{producto.descripcion}</p>
                   <div className="product-card-footer">
-                    {producto.precioDesde && <strong>Desde ${producto.precioDesde}</strong>}
                     <Link className="detail-link" href={`/productos/${producto.slug}`}>
                       Ver detalles <span aria-hidden="true">→</span>
                     </Link>
