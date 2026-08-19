@@ -29,7 +29,7 @@ const productos = [
     nombre: "Galletas de Chocolate",
     descripcion: "Esponjosos, suaves y con el toque perfecto de canela y glaseado.",
     precio: "Desde $--",
-    imagen: "/imagenes/.png",
+    imagen: "/imagenes/Galletas_chocolate.png",
     detalle: "Suaves y cremosos",
   },
   {
