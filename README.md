@@ -5,6 +5,7 @@ Tecnologías utilizadas:
 • React
 • Next.js
 • Node.js
+• TypeScript
 
 Este proyecto contiene:
 • Catalogo de productos
