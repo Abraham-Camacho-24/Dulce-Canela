@@ -50,7 +50,7 @@ export const productos: Producto[] = [
     detalle: "Hechas a tu gusto",
     precioDesde: 95,
     presentaciones: ["Bolsa de 8 piezas", "Caja de 15 piezas"],
-    sabores: ["Vainilla", "Canela", "Naranja"],
+    sabores: ["Vainilla"],
     extras: [{ nombre: "Caja con listón", precio: 35 }],
   },
   {
@@ -60,51 +60,33 @@ export const productos: Producto[] = [
       "Empanadas artesanales recién horneadas y preparadas con diferentes rellenos.",
     imagen: "/imagenes/Empanadas.png",
     detalle: "Recién horneadas",
-    precioDesde: 35,
+    precioDesde: 12,
     tamanos: [
-      { nombre: "Individual", precio: 35 },
+      { nombre: "Individual", precio: 12 },
       { nombre: "Caja de 6", precio: 190 },
       { nombre: "Caja de 12", precio: 360 },
     ],
-    sabores: ["Fresa", "Piña", "Cajeta", "Chocolate"],
+    sabores: ["Fresa", "Piña", "Cajeta", "Zarzamora"],
     saboresPremium: [
       { nombre: "Nutella", extra: 10 },
       { nombre: "Queso crema con zarzamora", extra: 15 },
     ],
-    extras: [{ nombre: "Decoración especial", precio: 30 }],
-  },
-  {
-    nombre: "Roles de canela",
-    slug: "roles-de-canela",
-    descripcion: "Esponjosos, suaves y con el toque perfecto de canela y glaseado.",
-    imagen: "/imagenes/roles.png",
-    detalle: "Suaves y esponjosos",
-    precioDesde: 45,
-    tamanos: [
-      { nombre: "Individual", precio: 45 },
-      { nombre: "Caja de 6", precio: 250 },
-    ],
-    saboresPremium: [
-      { nombre: "Nuez", extra: 12 },
-      { nombre: "Chocolate", extra: 10 },
-    ],
-    notas: ["El glaseado puede pedirse aparte."],
   },
   {
     nombre: "Cheesecake",
     slug: "cheesecake",
     descripcion: "Textura ultracremosa sobre una crocante base de galleta.",
-    imagen: "/imagenes/chessecake.png",
+    imagen: "/imagenes/Cheesecake-original.png",
     detalle: "Suave y cremoso",
     precioDesde: 320,
     tamanos: [
       { nombre: "Mediano (8 porciones)", precio: 320 },
       { nombre: "Grande (14 porciones)", precio: 490 },
     ],
-    sabores: ["Natural", "Fresa", "Zarzamora", "Limón"],
-    saboresPremium: [{ nombre: "Nutella", extra: 40 }],
+    sabores: ["Natural", "Limón"],
     notas: ["La decoración puede variar según la fruta disponible."],
   },
+  
 ];
 
 export function obtenerProducto(slug: string) {

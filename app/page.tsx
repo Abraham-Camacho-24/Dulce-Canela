@@ -13,8 +13,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(w
 
 const redes = [
   { nombre: "Instagram", url: "#", inicial: "ig" },
-  { nombre: "Facebook", url: "#", inicial: "f" },
-  { nombre: "TikTok", url: "#", inicial: "♪" },
+  
 ];
 
 function Sparkle({ className = "" }: { className?: string }) {
@@ -136,16 +135,10 @@ export default function Home() {
       <section className="categories" aria-labelledby="categorias-title">
         <div className="container category-inner">
           <div>
-            <p className="eyebrow light"><span>✦</span> Algo para cada antojo</p>
-            <h2 id="categorias-title">Encuentra tu favorito</h2>
+            <p className="eyebrow light"><span>✦</span>Hechos con cariño</p>
+            <h2 id="categorias-title">Algo para cada antojo</h2>
           </div>
-          <div className="category-list">
-            {categorias.map((categoria, index) => (
-              <div className="category-pill" key={categoria}>
-                <span>{["♜", "▰", "●", "◒", "✦"][index]}</span>{categoria}
-              </div>
-            ))}
-          </div>
+         
         </div>
       </section>
 
@@ -183,7 +176,7 @@ export default function Home() {
 
       <section className="social-section" aria-labelledby="redes-title">
         <div className="container social-inner">
-          <div><p className="eyebrow"><span>✦</span> Síguenos</p><h2 id="redes-title">Más antojos por aquí</h2></div>
+          <div><p className="eyebrow"><span>✦</span> Síguenos</p><h2 id="redes-title">Nuestras redes sociales</h2></div>
           <div className="social-links">
             {redes.map((red) => <a href={red.url} key={red.nombre}><span>{red.inicial}</span>{red.nombre}</a>)}
           </div>
