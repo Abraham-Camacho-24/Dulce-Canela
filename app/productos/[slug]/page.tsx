@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { obtenerProducto, productos } from "@/data/productos";
 
-const whatsappNumber = "523327883444";
+const whatsappNumber = "523312550437";
 
 type ProductPageProps = {
   params: Promise<{ slug: string }>;
