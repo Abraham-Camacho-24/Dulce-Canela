@@ -83,7 +83,7 @@ export const productos: Producto[] = [
       { nombre: "Mediano (8 porciones)", precio: 320 },
       { nombre: "Grande (14 porciones)", precio: 490 },
     ],
-    sabores: ["Natural", "Limón"],
+    sabores: ["Natural"],
     notas: ["La decoración puede variar según la fruta disponible."],
   },
   

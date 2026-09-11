@@ -6,7 +6,7 @@ import { productos } from "@/data/productos";
 const categorias = ["Pasteles", "Brownies", "Galletas", "Pays", "Postres especiales"];
 
 // Reemplaza estos datos cuando estén listas las redes y el número del negocio.
-const whatsappNumber = "523327883444";
+const whatsappNumber = "523312550437";
 const whatsappMessage =
   "Hola, vi la página de Dulce Canela y me gustaría hacer un pedido.";
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
