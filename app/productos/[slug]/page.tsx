@@ -118,7 +118,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <article className="detail-panel detail-panel-premium">
                   <p className="detail-kicker">Un toque especial</p>
                   <h2>Sabores premium</h2>
-                  <p className="additional-cost-label">Costo adicional</p>
+                  <p className="additional-cost-label">Costo adicional por empanada</p>
                   <ul className="priced-options">
                     {producto.saboresPremium.map((sabor) => (
                       <li key={sabor.nombre}><span>{sabor.nombre}</span><strong>+{formatoPrecio(sabor.extra)}</strong></li>
