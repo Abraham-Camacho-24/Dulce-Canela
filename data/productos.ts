@@ -74,6 +74,38 @@ export const productos: Producto[] = [
     ],
   },
   {
+    nombre: "Pan de Chocolate con Nuez",
+    slug: "Pan-de-Chocolate",
+    descripcion:
+      "Delicioso pan de chocolate cubierto con una suave cobertura de chocolate y trozos de nuez.",
+    imagen: "/imagenes/Pastel de chocolate con nuez.jpg",
+    detalle: "Intenso sabor a chocolate con un toque crujiente de nuez.",
+    precioDesde: 350,
+    tamanos: [
+      { nombre: "Grande (10 a 12 porciones)", precio: 350 },
+    ],
+    extras: [
+      { nombre: "Fruta de temporada", precio: 45 },
+    ],
+    notas: ["Solicita tu pedido con al menos 48 horas de anticipación."],
+  },
+  {
+    nombre: "Pan de Limon",
+    slug: "Pan-de-Limon",
+    descripcion:
+      "Delicioso pan de limón, con una textura suave y esponjosa y un ligero toque cítrico.",
+    imagen: "/imagenes/Pastel de limon.jpg",
+    detalle: "Suave, esponjoso y con un refrescante sabor a limón.",
+    precioDesde: 220,
+    tamanos: [
+      { nombre: "Grande (10 a 12 porciones)", precio: 220 },
+    ],
+    extras: [
+      { nombre: "Fruta de temporada", precio: 45 },
+    ],
+    notas: ["Solicita tu pedido con al menos 48 horas de anticipación."],
+  },
+  {
     nombre: "Cheesecake",
     slug: "cheesecake",
     descripcion: "Textura ultracremosa sobre una crocante base de galleta.",
