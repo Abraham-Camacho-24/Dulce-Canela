@@ -94,7 +94,7 @@ export const productos: Producto[] = [
     slug: "Pan-de-Limon",
     descripcion:
       "Delicioso pan de limón, con una textura suave y esponjosa y un ligero toque cítrico.",
-    imagen: "/imagenes/Pastel de limon.jpg",
+    imagen: "/imagenes/Pastel de Limon.jpg",
     detalle: "Suave, esponjoso y con un refrescante sabor a limón.",
     precioDesde: 220,
     tamanos: [
